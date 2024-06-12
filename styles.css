@@ -27,7 +27,7 @@ h4 {
   font-size: 20px;
   color: #222;
 }
-36
+
 h6 {
   font-weight: 700;
   font-size: 12px;
@@ -546,8 +546,44 @@ footer .copyright{
     text-align: center;
 }
 
-style media queries
-@media (max-width: 7px){
+/* shop page */
+#page-header{
+    background-image: url('img/banner/b1.jpg');
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* style media queries */
+@media (max-width: 788px){
     .section-p1 {
         padding: 40px 40px;
     }
@@ -632,7 +668,7 @@ style media queries
     }
 
     #banner3{
-        padding: 0 10px;
+        padding: 0 40px;
     }
 
     #banner3 .banner-box{
@@ -641,40 +677,38 @@ style media queries
 
     #newsletter .form{
         width: 70%;
-    } */
+    } 
 }
 
-@media(max-width: 477rem){
+@media(max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+
     #header{
         padding: 10px 30px;
     }
 
-    #navbar li{
-        margin-bottom: 15px;
+    h1{
+        font-size: 38px;
     }
 
-    #navbar.active{
-        right: 0;
-    }
-
-    #mobile i{
-        padding-left: 20px;
-    }
-
-    #close{
-        left: 10px;
+    h2{
+        font-size: 32px;
     }
 
     #hero{
-        padding: 0 40px;
+        padding: 0 20px;
+        background-position: 55%;
     }
-
+ 
     #feature{
-        padding: 40px 20px;
+        justify-content: space-between;
     }
 
     #feature .fe-box{
-        width: 100%;
+        width: 155px;
+        margin: 0 0 15px 0;
     }
 
     #product1 .pro{
@@ -682,11 +716,15 @@ style media queries
     }
 
     #banner{
-        padding: 0 40px;
+        height: 40vh;
     }
 
     #sm-banner .banner-box{
-        min-width: 100%;
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box2{
+        margin-top: 20px;
     }
 
     #banner3{
@@ -697,8 +735,15 @@ style media queries
         width: 100%;
     }
 
+    #newsletter{
+        padding: 40px 20px;
+    }
+
     #newsletter .form{
         width: 100%;
     }
+
+    footer.copyright{
+        text-align:start;
+    }
 }
- 
