@@ -644,7 +644,7 @@ style media queries
     } */
 }
 
-@media(max-width: 477px){
+@media(max-width: 477rem){
     #header{
         padding: 10px 30px;
     }
